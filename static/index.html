@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus庐">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>携程网站</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="js/vue.js"></script>
+ </head>
+ <body>
+ <div id="index">
+   <div id="header">
+     <iframe src="html/header.html" frameborder="0" class="header"></iframe>
+   </div>
+   <div id="container">
+	   <ul id="zuo_daoHang" >
+		<li><a href="#"><img src="img/a1.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a2.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a3.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a4.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a5.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a6.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a7.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a8.png" alt="" /></a></li>
+		<li><a href="#"><img src="img/a9.png" alt="" /></a></li>
+	   </ul>
+	   <div id="index_d1">
+		 <div>
+		   <a href="#" id="lunbo">
+			 <img :src="carousel[0].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[1].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[2].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[3].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[4].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[5].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[6].img" alt="" />
+		   </a>
+		   <a href="#">
+			 <img :src="carousel[7].img" alt="" />
+		   </a>
+		   <div id="d1">
+			   <div>
+				 <ul>
+					<li><a href="#">酒店</a></li>
+					<li><a href="#">机票</a></li>
+					<li><a href="#">自由行</a></li>
+					<li><a href="#">旅游</a></li>
+					<li><a href="#">火车</a></li>
+					<li><a href="#">用车</a></li>
+					<li><a href="#">门票</a></li>
+				 </ul>
+				</div>
+				 <div class="index_dao1">
+					   <div>
+						   <h5><a href="#">国内景点</a></h5>
+						   <h5><a href="#">海外酒店</a></h5>
+						   <h5><a href="#">酒店团购</a></h5>
+						   <h5><a href="#">酒店+景点</a></h5>
+						   <h5><a href="#">会议·团房·长住</a></h5>
+					   </div>
+					   <div>
+						 <ul>
+							<li>目的地</li>
+							<li>入住日期</li>
+							<li>房间数</li>
+							<li>酒店级别</li>
+						 </ul>
+						 <form action="">
+						  <p><input type="text"></p>
+						  <p>
+							 <input type="text">
+							 <span>退房日期</span><input type="text"> 
+							</p>
+						  <p>
+							 <input type="text">
+							 <span class="S_left">住客数</span><input type="text">
+						  </p>
+						  <p>
+							 <input type="text">
+							 <span class="S_left">关键词</span><input type="text">
+						  </p>
+						 </form>
+						 
+					   </div>
+					   <div><button type="button">搜索</button></div>
+				</div>
+		   </div>
+		</div>
+	   </div>
+	   <div id="index_d2">
+		  <div>
+			<h4><a href="#">特卖汇</a></h4>
+			<h4><a href="#">出境游</a></h4>
+			<h4><a href="#">境内游</a></h4>
+			<h4><a href="#">周边游</a></h4>
+			<h4><a href="#">邮轮</a></h4>
+			<h4><a href="#">门票</a></h4>
+			<h4><a href="#">主题游</a></h4>
+			<h4><a href="#">高端游</a></h4>
+		  </div>
+		  <div id="index_img">
+		    <div>
+              <ul>
+              	<li><a href="#">精选</a></li>
+              	<li><a href="#">跟团游</a></li>
+              	<li><a href="#">自由行</a></li>
+              	<li><a href="#">当地游</a></li>
+              	<li><a href="#">邮轮游</a></li>
+              	<li class="text-right1"><a href="#">更多特卖汇></a></li>
+              </ul>
+			</div>
+          <div id="tanx">
+		  <div>
+			<div class="tanxing">
+			   <div>
+				  <a href="#">
+					<div>
+						<img :src="product[0].pic">
+						<p>{{product[0].details}}</p>
+					</div>
+					<p>{{product[0].title}}</p>
+					<p class="index_img1">{{product[0].xiwei}}<span>￥<span class="index_jiage">{{product[0].price}}</span>起</span></p>
+				  </a>
+
+				  <a href="#">
+					<div>
+						<img :src="product[1].pic" alt="" />
+						<p>{{product[1].details}}</p>
+					</div>
+					<p>{{product[1].title}}</p>
+					<p class="index_img1">{{product[1].xiwei}}<span>￥<span class="index_jiage">{{product[1].price}}</span>起</span></p>
+				  </a>
+
+				  <a href="#">
+					<div>
+						<img :src="product[2].pic" alt="" />
+						<p>{{product[2].details}}</p>
+					</div>
+					<p>{{product[2].title}}</p>
+					<p class="index_img1">{{product[2].xiwei}}<span>￥<span class="index_jiage">{{product[2].price}}</span>起</span></p>
+				  </a>
+				  <a href="#">
+					<div>
+						<img :src="product[3].pic" alt="" />
+						<p>{{product[3].details}}</p>
+					</div>
+					<p>{{product[3].title}}</p>
+					<p class="index_img1">{{product[3].xiwei}}<span>￥<span class="index_jiage">{{product[3].price}}</span>起</span></p>
+				  </a>
+                </div>				
+			</div>
+			<div class="tanxing1">
+			   <div>
+				  <a href="#">
+					<div>
+						<img src="img/300e0q000000g5o8b658A_C_500_280 (1).jpg" alt="" />
+						<p>3大古镇3大5A景点5隔民族特色餐</p>
+					</div>
+					<p>云南昆明+大力+丽江6日5晚跟团游(4..</p>
+					<p class="index_img1">席位充足<span>￥<span class="index_jiage">2159</span>起</span></p>
+				  </a>
+
+				  <a href="#">
+					<div>
+						<img src="img/10020c000000612i4DDF0_C_500_280.jpg" alt="" />
+						<p>直飞以色列一地特卖</p>
+					</div>
+					<p>以色列耶路撒冷+死海+伯利恒8日5晚</p>
+					<p class="index_img1">席位充足<span>￥<span class="index_jiage">8990</span>起</span></p>
+				  </a>
+
+				  <a href="#">
+					<div>
+						<img src="img/300u0q000000g87mr8935_C_500_280 (1).png" alt="" />
+						<p>暑期特惠,2成人起订下单立减200/单!</p>
+					</div>
+					<p>云南西双版纳+昆明6日5晚跟团游·【...</p>
+					<p class="index_img1">席位充足<span>￥<span class="index_jiage">2270</span>起</span></p>
+				  </a>
+				  <a href="#">
+					<div>
+						<img src="img/300w0o000000es5ru7CB9_C_500_280 (1).jpg" alt="" />
+						<p>全网销售爆款,VIP头等舱游全江,车载...</p>
+					</div>
+					<p>广西桂林+阳朔+漓江5日4晚跟团游(5...</p>
+					<p class="index_img1">席位充足<span>￥<span class="index_jiage">2219</span>起</span></p>
+				  </a>
+                </div>	
+				</div>
+			</div>
+			<div id="index_tupian">
+			  <a href="#">
+			   <img src="img/tmh_220x330.jpg" alt="" />
+			   <p>不可不看的特价旅游频道!</p>
+			  </a>
+			  </a>
+			</div>
+			</div>
+
+			</div>
+
+			<div id="jiuDian">
+			  <div>
+				<h4><a href="#">海外酒店</a></h4>
+				<h4><a href="#">海外民宿+短租</a></h4>
+				<h4><a href="#">国内酒店</a></h4>
+				<h4><a href="#">酒店+景点</a></h4>
+				<h4><a href="#">客栈民宿</a></h4>
+				<h4><a href="#">团购</a></h4>
+		      </div>
+			  <div id="jiuDian_b">
+				  <div id="jiuDian_zuo">
+					<div>
+					   <div>
+						  <h5>促销</h5>
+						  <ul>
+							<li><a href="#">睡遍全世界——印尼国家馆</a></li>
+							<li><a href="#">WOW！海外精选酒店推荐</a></li>
+							<li><a href="#">睡遍全世界——澳大利亚站</a></li>
+							<li><a href="#">华人礼遇尊享特惠</a></li>
+							<li><a href="#">海外热卖酒店都在这</a></li>
+						  </ul>
+					   </div>
+					   <div>
+						 <h5>发现酒店</h5>
+						  <ul>
+							<li><a href="#">布拉格绿龙虾酒店</a></li>
+							<li><a href="#">希腊圣托里尼岛的悬崖海景酒店</a></li>
+							<li><a href="#">北海道登别万世阁酒店</a></li>
+							<li><a href="#">澳大利亚首都堪培拉的公寓酒店</a></li>
+						  </ul>
+					   </div>
+					   </div>
+					   </div>
+					
+					<div id="jiuDian_zhu"> 
+					    <div id="jiuDian_you">
+						  <div>
+							<ul>
+								<li><a href="#">热门城市</a></li>
+								<li><a href="#">都市购物</a></li>
+								<li><a href="#">海岛休闲</a></li>
+								<li><a href="#">旅游胜地</a></li>
+								<li class="text-right"><a href="#">更多海外酒店></a></li>
+							</ul>
+						  </div>
+						<div>
+						  <div>
+							<div class="jiuDian_tupian">
+							  <a href="#">
+							    <img src="img/singapore256-256.jpg" alt="">
+								<div class="zhongxin">
+								  <div>
+									  <h4>新加坡</h4>
+									  <p class="zhongxin_p">681家酒店</p>
+									  <P>￥ <span>70</span>起</P>
+								  </div>
+								</div>
+							  </a>
+							  <a href="#">
+							     <img src="img/bangkok256-256.jpg" alt="">
+								 <div class="zhongxin">
+								  <div>
+									  <h4>曼谷</h4>
+									  <p class="zhongxin_p">3552家酒店</p>
+									  <P>￥ <span>18</span>起</P>
+								  </div>
+								</div>
+							  </a>
+							  <a href="#">
+							    <img src="img/tokyo256-256.jpg" alt="">
+								<div class="zhongxin">
+								  <div>
+									  <h4>东京</h4>
+									  <p class="zhongxin_p">1572家酒店</p>
+									  <P>￥ <span>121</span>起</P>
+								  </div>
+								</div>
+							  </a>
+							</div>
+							<div class="jiuDian_tupian">
+							  <a href="#">
+								<img src="img/kualalumpur256-256.jpg" alt="">
+								<div class="zhongxin">
+								  <div>
+									  <h4>吉隆坡</h4>
+									  <p class="zhongxin_p">2122家酒店</p>
+									  <P>￥ <span>27</span>起</P>
+								  </div>
+								</div>
+							  </a>
+							  <a href="#">
+								<img src="img/osaka256-256.jpg" alt="">
+								<div class="zhongxin">
+								  <div>
+									  <h4>大阪</h4>
+									  <p class="zhongxin_p">1501家酒店</p>
+									  <P>￥ <span>44</span>起</P>
+								  </div>
+								</div>
+							  </a>
+							  <a href="#">
+								<img src="img/phuket_256_256_01.jpg" alt="">
+								<div class="zhongxin">
+								  <div>
+									  <h4>普吉岛</h4>
+									  <p class="zhongxin_p">4374家酒店</p>
+									  <P>￥ <span>41</span>起</P>
+								  </div>
+								</div>
+							  </a>
+							</div>
+						  </div>
+						  <div id="jiuDian_you1">
+							  <div>
+							     <a href="#">
+							       <img src="img/220330.jpg" alt="">
+								   <p>睡遍全世界——泰国</p>
+							     </a>
+							  </div>
+						  </div>
+						</div>
+                       </div>
+					</div>
+
+					</div>
+				  </div>
+
+            </div>
+       <div class="zhuti" id="piao">
+		     <div class="d_flex">
+			    <h4><a href="#">国际•港澳台特价机票</a></h4>
+				<h4><a href="#">国内特价机票</a></h4>
+				<select name="" id="">
+				  <option value="">上海出发</option>
+				  <option value="">上海出发</option>
+				  <option value="">上海出发</option>
+				  <option value="">上海出发</option>
+				</select>
+			 </div>
+			 <div>
+			    <div>
+				  <div id="qiangpiao">
+				     <ul class="d_flex">
+				     	<li><a href="#">热门往返</a></li>
+				     	<li><a href="#">亚洲</a></li>
+				     	<li><a href="#">欧洲</a></li>
+				     	<li><a href="#">美洲</a></li>
+						<li><a href="#">非洲</a></li>
+						<li><a href="#">更多国际•港澳台特价机票></a></li>
+				     </ul>
+				  </div>
+				  <div class="d_flex qiangpiao_index">
+				    <div class="d_flex qiangpiao_zuo">
+				     <div class="qiangpiao_d1">
+					    <a href="#">
+						  <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						</a>
+					 </div>
+				     <div class="qiangpiao_d1">
+						 <a href="#">
+						   <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						 </a>
+					 </div>
+				     <div class="qiangpiao_d1">
+						 <a href="#">
+						   <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						 </a>
+					 </div>
+				     <div class="qiangpiao_d1">
+					   <a href="#">
+					      <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+					   </a>
+					 </div>
+					 <div class="qiangpiao_d1">
+					    <a href="#">
+						  <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						</a>
+					 </div>
+				     <div class="qiangpiao_d1">
+						 <a href="#">
+						   <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						 </a>
+					 </div>
+				     <div class="qiangpiao_d1">
+						 <a href="#">
+						   <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						 </a>
+					 </div>
+				     <div class="qiangpiao_d1">
+					   <a href="#">
+					      <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+					   </a>
+					 </div>
+					 <div class="qiangpiao_d1">
+					    <a href="#">
+						  <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						</a>
+					 </div>
+					 <div class="qiangpiao_d1">
+					    <a href="#">
+						  <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						</a>
+					 </div>
+					 <div class="qiangpiao_d1">
+					    <a href="#">
+						  <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						</a>
+					 </div>
+					 <div class="qiangpiao_d1">
+					    <a href="#">
+						  <p>上海 ─ 曼谷</p>
+						  <p>9月15号 ─ 9月22号</p>
+						  <p>￥ <span>295</span><span>起</span><button>立抢</button></p>
+						</a>
+					 </div>
+
+				   
+	                </div>
+                    <div>
+				     <div>
+					    <a href="#"><img src="img/60010q000000gsgjnAD29.jpg" alt="" /></a>
+					 </div>
+				  </div>
+				  </div>
+				 
+				</div>
+			 </div>
+       </div>
+	   <div class="zhuti">
+	     <div class="d_flex">
+			 <h4>当地玩乐 • 出境</h4>
+			 <h4>当地玩乐 • 境外</h4>
+		 </div>
+		 <div class="d_flex">
+		    <div class="wanle_zuo">
+			   <h5>热门目的地</h5>
+			   <div>
+			     <ul class="d_flex">
+			     	<li><a href="#">普吉岛</a><span>|</span></li>
+			     	<li><a href="#">曼谷</a><span>|</span></li>
+			     	<li><a href="#">东京</a><span>|</span></li>
+			     	<li><a href="#">清迈</a></li>
+			     </ul>
+				 <ul class="d_flex">
+			     	<li><a href="#">香港</a><span>|</span></li>
+			     	<li><a href="#">芽庄</a><span>|</span></li>
+			     	<li><a href="#">巴厘岛</a><span>|</span></li>
+			     	<li><a href="#">沙巴</a></li>
+			     </ul class="d_flex">
+				 <ul class="d_flex">
+			     	<li><a href="#">大阪</a><span>|</span></li>
+			     	<li><a href="#">岘港</a><span>|</span></li>
+			     	<li><a href="#">迪拜</a><span>|</span></li>
+			     	<li><a href="#">澳门</a></li>
+			     </ul>
+				 <ul class="d_flex">
+			     	<li><a href="#">墨尔本</a><span>|</span></li>
+			     	<li><a href="#">冲绳</a><span>|</span></li>
+			     	<li><a href="#">悉尼</a></li>
+			     </ul>
+				 <ul class="d_flex">
+			     	<li><a href="#">新加坡</a><span>|</span></li>
+			     	<li><a href="#">暹粒</a><span>|</span></li>
+			     	<li><a href="#">台北</a></li>
+			     </ul>
+			   </div>
+			</div>
+		    <div class="wanle_you">
+			  <div>
+				  <div>
+					<div>
+					  <ul class="d_flex">
+					  	<li><a href="#">一日游</a></li>
+					  	<li><a href="#">演出/赛事</a></li>
+					  	<li><a href="#">交通接驳</a></li>
+					  	<li><a href="#">当地美食</a></li>
+					  	<li><a href="#">游船观光</a></li>
+					  	<li><a href="#">SPA水疗</a></li>
+						<li><a href="#">特色体验</a></li>
+						<li><a href="#">更多当地玩乐</a></li>
+					  </ul>
+					</div>
+					<div class="d_flex">
+					  <div class="wanle_tupian">
+					     <a href="#">
+						 <p class="fangda"><img src="img/q1.jpg" alt=""></p>
+						 <p>日本冲绳县万座毛+古宇利岛+冲绳美..</p>
+						 <p>日本冲绳  <span>￥ <span>199</span>起</span></p>
+						 </a>
+					  </div>
+					  <div class="wanle_tupian">
+						<a href="#">
+						<p class="fangda"><img src="img/q2.jpg" alt=""></p>
+						<p>清莱白庙+黑庙+蓝庙一日游【领券立...</p>
+						 <p>泰国•清迈  <span>￥ <span>139</span>起</span></p>
+						</a>
+					  </div>
+					  <div class="wanle_tupian">
+						<a href="#">
+						 <p class="fangda"><img src="img/q3.jpg" alt=""></p>
+						 <p>泰国曼谷丹嫩沙多水上集市+美工铁...</p>
+						 <p>泰国•曼谷  <span>￥ <span>65</span>起</span></p>
+						</a>
+
+					  </div>
+					  <div class="wanle_tupian">
+						<a href="#">
+						 <p class="fangda"><img src="img/q4.jpg" alt=""></p>
+						 <p>沙巴Kawa红树林一日游【迎中秋活动..</p>
+						 <p>马来西亚•沙巴  <span>￥ <span>148</span>起</span></p>
+						</a>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			</div>
+		 </div>
+	   </div>
+	   <div class="zhuti">
+	     <div class="d_flex">
+			 <h4>全球购</h4>
+		 </div>
+		 <div class="d_flex">
+		    <div class="wanle_zuo">
+			   <h5>热门目的地</h5>
+			   <div>
+			     <ul class="d_flex">
+			     	<li><a href="#">香港</a><span>|</span></li>
+			     	<li><a href="#">澳门</a><span>|</span></li>
+			     	<li><a href="#">日本</a><span>|</span></li>
+			     	<li><a href="#">美国</a></li>
+			     </ul>
+				 <ul class="d_flex">
+			     	<li><a href="#">英国</a><span>|</span></li>
+			     	<li><a href="#">新加坡</a><span>|</span></li>
+			     	<li><a href="#">法国</a></li>
+			     </ul class="d_flex">
+				 <ul class="d_flex">
+			     	<li><a href="#">西班牙</a><span>|</span></li>
+			     	<li><a href="#">意大利</a><span>|</span></li>
+			     	<li><a href="#">泰国</a></li>
+
+			     </ul>
+				 <ul class="d_flex">
+			     	<li><a href="#">澳大利亚</a><span>|</span></li>
+			     	<li><a href="#">德国</a><span>|</span></li>
+			     	<li><a href="#">瑞士</a></li>
+			     </ul>
+				 <ul class="d_flex">
+			     	<li><a href="#">阿联酋</a><span>|</span></li>
+			     	<li><a href="#">印度尼西亚</a><span>|</span></li>
+			     	<li><a href="#">柬埔寨</a></li>
+			     </ul>
+			   </div>
+			</div>
+		    <div class="wanle_you">
+			  <div>
+				  <div>
+					<div>
+					  <ul class="d_flex">
+					  	<li><a href="#">热门商户</a></li>
+					  	<li><a href="#">综合商场</a></li>
+					  	<li><a href="#">奢品大牌</a></li>
+					  	<li><a href="#">口碑推荐</a></li>
+					  	<li><a href="#">新店首选</a></li>
+					  	<li><a href="#">更多全球名店></a></li>
+					  </ul>
+					</div>
+					<div class="d_flex">
+					  <div class="wanle_tupian">
+					     <a href="#">
+						 <p class="fangda"><img src="img/d1.jpg" alt=""></p>
+						 <p>DFS旗下T广场(香港广东道店)DFS...</p>
+						 <p>中国•香港 <span>返现</span></p>
+						 </a>
+					  </div>
+					  <div class="wanle_tupian">
+						<a href="#">
+						<p class="fangda"><img src="img/d2.jpg" alt=""></p>
+						<p>迪拜国际机场T3航站楼A出发区(综...</p>
+						 <p>阿联酋•迪拜<span>促销</span></p>
+						</a>
+					  </div>
+					  <div class="wanle_tupian">
+						<a href="#">
+						 <p class="fangda"><img src="img/d3.jpg" alt=""></p>
+						 <p>高岛屋(大阪店)Takashimaya(O...</p>
+						 <p>日本•大阪  <span>返现</span></p>
+						</a>
+
+					  </div>
+					  <div class="wanle_tupian">
+						<a href="#">
+						 <p class="fangda"><img src="img/d4.jpg" alt=""></p>
+						 <p>日上免税行(北京首都国际机场T3航...</p>
+						 <p>中国•北京</p>
+						</a>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			</div>
+		 </div>
+	   </div>
+	 
+	 
+	 
+   </div>
+   <div class="footer">
+     <iframe src="html/footer.html" frameborder="0" class="footer"></iframe>
+   </div>
+  <script src="js/jquery-1.11.3.js"></script>
+ <script src="js/ajax.js"></script>
+ <script src="js/index.js"></script>
+ <script src="js/index_ajax.js"></script>
+ </body>
+</html>

@@ -1,0 +1,75 @@
+*{margin:0;padding:0;text-decoration:none;    font: 12px/1.5 "Microsoft YaHei",SimSun,Tahoma,Verdana,Arial,sans-serif;list-style:none;}
+#login_top{width: 980px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;}
+#login_top>a{display:block;height:100%}
+#login_top>a>img{height:185%;position:relative;top:-40px;}
+#login_chengmi{width: 100%;
+    padding: 7px 0;
+    margin-top: -10px;
+    line-height: 16px;
+    background: #FFFCD8;
+    font-family: 'Microsoft yahei';
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;}
+#login_index{width:100%;overflow:hidden;position:relative}
+#login_index>img{margin-left:-260px;}
+#login_bottom{    
+    border-top: 1px dashed #9ECCF5;
+    padding-top: 20px;
+	width: 980px!important;
+    clear: both;
+    text-align: center;
+    padding-top: 15px;
+    margin: 55px auto 20px;
+    line-height: 1.5;
+    font-family: Arial,verdana!important;
+    color: #4c4c4c;
+    font-size: 12px;}
+#biaodan{position: absolute;
+		 top:60px;
+		 right:280px;
+		 width: 380px;
+	 background:#fff;
+	     box-shadow: 0 1px 6px rgba(0,0,0,.1);}
+#biaodan>form{padding:30px;}
+#biaodan>form>h2{font-size:16px;margin-bottom:30px;}
+form>p{margin-bottom:15px;}
+form a{color: #666;}
+.input_d{text-indent:10px;width:100%; height:42px;line-height:30px;border-radius:2px;border:1px solid #ddd;outline:none;}
+.d1{width:100%; 
+	height:42px;
+    background-color: #FF9A14;color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+ }
+ .d1:hover{background-color: #CC7B10;}
+ form>p:last-child{text-align:center;color:#666;}
+  form>p:last-child>a{
+   padding: 0 3px;
+    color: #999;
+    border-bottom: 1px dotted #999;}
+.d3{margin-left:140px;}
+#q1{position:relative;}
+#q1>a{position:absolute;right:10px;top:13px;}
+#biaodan>ul{display:flex;padding:0 0 50px 30px;}
+#biaodan>ul>li>a{color:#666;}
+#biaodan>ul>li>span{margin:0 10px;color:#ddd;}
+#biaodan>ul>li:last-child>a{margin-left:36px;color:#3882E5;}
+#saoma>a{
+    position: absolute;
+    top: 10px;
+    right: -32px;
+    width: 14px;
+    height: 86px;
+    padding: 9px;
+    background: #3882E5;
+	color:#fff;}
+

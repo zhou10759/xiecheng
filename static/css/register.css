@@ -1,0 +1,72 @@
+*{margin:0;padding:0;text-decoration:none;    font: 12px/1.5 "Microsoft YaHei",SimSun,Tahoma,Verdana,Arial,sans-serif;list-style:none;}
+#login_top{width: 980px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;}
+#login_top>a{display:block;height:100%}
+#login_top>a>img{height:185%;position:relative;top:-40px;}
+#login_chengmi{width: 100%;
+    padding: 7px 0;
+    margin-top: -10px;
+    line-height: 16px;
+    background: #FFFCD8;
+    font-family: 'Microsoft yahei';
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;}
+#login_index{width:100%;overflow:hidden;position:relative}
+#login_index>img{margin-left:-260px;}
+#login_bottom{    
+    border-top: 1px dashed #9ECCF5;
+    padding-top: 20px;
+	width: 980px!important;
+    clear: both;
+    text-align: center;
+    padding-top: 15px;
+    margin: 55px auto 20px;
+    line-height: 1.5;
+    font-family: Arial,verdana!important;
+    color: #4c4c4c;
+    font-size: 12px;}
+#biaodan{position: absolute;
+		 top:15px;
+		 right:100px;
+		 width: 380px;
+	 background:#fff;
+	     box-shadow: 0 1px 6px rgba(0,0,0,.1);
+		 padding:30px;
+		 }
+
+
+ 
+#saoma>a{
+    position: absolute;
+    top: 10px;
+    right: -32px;
+    width: 14px;
+    height: 86px;
+    padding: 9px;
+    background: #3882E5;
+	color:#fff;}
+	form{}
+form>div:first-child>h3{font-size:24px;}
+.form-group{margin-bottom:15px;}
+.form-group>label{display: inline-block;
+    width: 90px;
+    text-align: right;
+    color: #666;
+    font-size: 14px;}
+.form-group>input{padding: 10px 20px;
+    width: 235px;
+    margin-top: 12px;
+    border-radius: 2px;
+	border-color:#e8e8e8;
+	}
+input[type="submit"]{width: 276px;
+    color: #fff;
+    border-radius: 2px;
+	cursor: pointer;
+	border: none;
+	background-color: #CC7B10;}

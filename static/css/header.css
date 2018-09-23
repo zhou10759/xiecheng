@@ -1,0 +1,43 @@
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol{padding:0;margin:0;}
+a{text-decoration:none;}
+#top{display:flex;height:65px;width:1200px;margin:0 auto;}
+#top div:nth-child(1) img{width:120px;position:relative;top:-40px;}
+#top_u{display:flex;}
+#top_u li{list-style: none;}
+#top_u li span{color:#666;font-size:8px;}
+#top_xianshi{margin-left:320px;}
+
+#top_u li a{color:#4c4c4c;font-size:12px;line-height:50px;}
+#top_sousuo{height:28px;width:320px;border-radius:5px;outline:none;border:1px solid #8ebefc;margin-top:10px;font-size:12px;margin-left:20px;}
+#top_sousuo:focus{border:1px solid #2577e3;}
+#top_q1{background:#2577e3;}
+
+#top_d1F{background:#2577e3;width:100%}
+#top_d1{height:40px;width:1200px;margin:0 auto;}
+#top_d1 ul{display:flex;list-style:none;}
+#top_d1 ul li{line-height:40px;padding-left:10px;}
+#top_d1>ul>li:first-child>a{display:block;height:90%;padding-left:6px;padding-right:6px; background:#0a56bb;}
+#top_d1>ul>li>a{color:#fff;font-size:15px;}
+#top_d1 ul li a span{color:#666;font-size:8px;}
+#top_d1 ul li:focus{background:#0a56bb;}
+
+.top_a{background:#fff;height:40px;width: 1180px;margin: 28px auto 0;margin-top:10px;}
+.top_a ul{display:flex;list-style:none;}
+.top_a ul li{margin-right:10px;}
+.top_a ul li img{width:20px;position:relative;top:3px;}
+.top_a ul li a{font-size:13px;color:#666;margin:0 0 10px 3px;}
+.top_a ul li a:hover{color:#3983e5;}
+.top_a ul li:first-child>a{display:block;padding:5px;background:#74a8ed;color:#fff;}
+#top_xianshi{position:relative;}
+#top_xianshi div{position:absolute;top:35px;right:-50px;border:3px solid #ddd;opacity:1;background:#fff;}
+.top_yuyan{display:none;}
+#top_xianshi:hover div{display:block;}
+#top_d1{position:relative;display:flex;}
+.top_h{display:none;position:absolute;top:40px;left:10px;border:1px solid #2577e3;background:#fff;width:1180px;z-index:5;}
+.top_h ul{list-style:none;display:flex;position:relative;}
+.top_h>ul>li:last-child{position:absolute;top:0;right:10px;}
+.top_h>ul>li>a{color:#666;}
+#top_d1>ul>li:hover div{display:block;}
+#top_d1>div:last-child{background:#ff9913;margin-left:100px;padding-left:10px; padding-right:90px;}
+.my_smail{font-size:13px;}
+#denglu>p>a{color:#fff;}

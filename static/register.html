@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="css/register.css">
+	<script src="js/vue.js"></script>
+	<script src="js/axios.min.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/qs.min.js"></script>
+
+</head>
+<body>
+	<div>
+	   <div id="login_top">
+		    <a href="#">
+			  <img src="img/logo.png" alt="">
+			</a>
+	   </div>
+	   <div id="login_chengmi">
+	    <p>依据《网络安全法》，为保障您相关功能的正常使用，请尽快完成手机验证。 新版《隐私政策》已上线，感谢您的支持。</p>
+	   </div>
+	   <div id="login_index">
+	     <img src="img/700j0w000000k6fnaD6A5_1920_540_363.jpg" alt="">
+		 <div id="biaodan">
+		   <div>
+		    <div id="saoma">
+		    <a href="#">扫码登录</a>
+		       </div>
+		     <form id="form">
+			   <div>
+			     <h3>注册新用户</h3>
+			   </div>
+			   <div class="form-group">
+			     <label for="uname">用户名：</label>
+				 <input type="text" name="uname" placeholder="请输入账号" v-model="uname">
+				 <span></span>
+			   </div>
+			   <div class="form-group">
+				 <label for="upwd">密码：</label>
+				 <input type="password" name="upwd" placeholder="请输入密码" v-model="upwd">
+				 <span></span>	
+			   </div>
+			   <div class="form-group">
+			     <label for="upwd">确认密码：</label>
+				 <input type="password" name="upwd" placeholder="请输入确认密码">
+				 <span></span>
+			   </div>
+			   <div class="form-group">
+				 <label for="email">邮箱：</label>
+				 <input type="email" name="email" placeholder="请输入邮箱地址" v-model="email">
+				 <span></span>
+			   </div>
+			   <div class="form-group">
+			     <label for="phone">手机号：</label>
+				 <input type="text" name="phone" placeholder="请输入手机号"  v-model="phone">
+				 <span></span>
+			   </div>
+			   <div class="form-group">
+			     <label for=""></label>
+			     <input type="submit" value="立即注册" @click="submit">
+			   </div>
+			 </form>
+			  
+		   </div>
+		   
+		 </div>
+	   </div>
+	   <div id="login_bottom">
+	      <p>网站导航 | 宾馆索引 | 用户协议 | 关于携程 | 企业公民 | 诚聘英才 | 分销联盟 | 企业礼品卡采购 | 代理合作 | 广告业务 | 联系我们 | 返回旧版</p>
+		  <p>Copyright © 1999-2018, ctrip.com. All rights reserved.</p>
+	   </div>
+	</div>
+	<script src="js/register.js">
+  
+	</script>
+
+</body>
+</html>
