@@ -34,31 +34,32 @@
 			   <div class="form-group">
 			     <label for="uname">用户名：</label>
 				 <input type="text" name="uname" placeholder="请输入账号" v-model="uname">
-				 <span></span>
+				 <span v-if="isuname" class="yz">用户账号不能为空!</span>
 			   </div>
 			   <div class="form-group">
 				 <label for="upwd">密码：</label>
 				 <input type="password" name="upwd" placeholder="请输入密码" v-model="upwd">
-				 <span></span>	
+				 <span v-if="isupwd" class="yz">用户密码不能为空!</span>
 			   </div>
 			   <div class="form-group">
 			     <label for="upwd">确认密码：</label>
-				 <input type="password" name="upwd" placeholder="请输入确认密码">
-				 <span></span>
+				 <input type="password" name="cpwd" placeholder="请输入确认密码" v-model="cpwd">
+				 <span v-if="iscpwd" class="yz">确认密码不能为空!</span>
+				 <span v-if="ispwd" class="yz">两次密码不一致!</span>
 			   </div>
 			   <div class="form-group">
 				 <label for="email">邮箱：</label>
 				 <input type="email" name="email" placeholder="请输入邮箱地址" v-model="email">
-				 <span></span>
+				 <span v-if="isemail" class="yz">用户邮箱不能为空</span>
 			   </div>
 			   <div class="form-group">
 			     <label for="phone">手机号：</label>
 				 <input type="text" name="phone" placeholder="请输入手机号"  v-model="phone">
-				 <span></span>
+				 <span v-if="isphone" class="yz">用户手机号不能为空!</span>
 			   </div>
 			   <div class="form-group">
 			     <label for=""></label>
-			     <input type="submit" value="立即注册" @click="submit">
+			     <input type="button" value="立即注册" @click="submit">
 			   </div>
 			 </form>
 			  

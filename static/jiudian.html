@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="css/jiudian.css" />
  </head>
  <body>
-    <div>
+    <div id="main">
 	   <div class="left_input">
 	       <div>
-               <h3>搜索国内酒店</h3>
+               <h2>搜索国内酒店</h2>
            </div>
-           <div>
-               <div>
+           <div >
+               <div class="input_neirong">
                   <div>
                       <label for="">
                           <input type="checkbox">酒店
@@ -31,48 +31,28 @@
                         <input type="checkbox">特价酒店
                     </label>
                   </div> 
-                  <div>
+                  <div id="left_table">
                       <table>
                           <tr>
-                              <td>目的地</td>
-                              <td colspan="2"> <input type="text" placeholder="上海"> </td>
-                              <td> <select name="" id="">
-                                  <option value="">搜索历史</option>
-                              </select> </td>
+                              <th>目的地</th>
+                              <td colspan="3"> <input type="text" placeholder="上海" class="input_1 input_2"> </td>
                           </tr>
                           <tr>
-                              <td>入住日期</td>
+                              <th>入住日期</th>
                               <td colspan="3">
-                                <input type="date">
+                                <input type="date" class="input_1">
                               </td>
                           </tr>
                           <tr>
-                              <td>退房日期</td>
+                              <th>退房日期</th>
                               <td colspan="3">
-                                 <input type="date">
+                                 <input type="date" class="input_1">
                               </td>
                           </tr>
+                         
                           <tr>
-                              <td>房间数</td>
-                              <td>
-                                  <select name="" id="">
-                                      <option value="">1间</option>
-                                      <option value="">2间</option>
-                                      <option value="">3间</option>
-                                      <option value="">4间</option>
-                                      <option value="">5间</option>
-                                      <option value="">6间</option>
-
-                                  </select>
-                              </td>
-                              <td>住客数</td>
-                              <td><select name="" id="">
-                                  <option value="">1成人</option>
-                              </select></td>
-                          </tr>
-                          <tr>
-                              <td>酒店级别</td>
-                              <td colspan="3">
+                              <th>酒店级别</th>
+                              <td colspan="3" id="select_1">
                                   <select name="" id="">
                                         <option value="">不限</option>
                                         <option value="">不限</option>
@@ -82,19 +62,40 @@
                               </td>
                           </tr>
                           <tr>
-                              <td>关键词</td>
-                              <td colspan="3">
-                                  <input type="text" placeholder="(选填)酒店名/地标/商圈">
+                              <th>关键词</th>
+                              <td colspan="2">
+                                  <input type="text" placeholder="(选填)酒店名/地标/商圈" class="input_1">
                               </td>
                           </tr>
                       </table>
+                      <div>
+                          <input type="submit" id="btnSearch" value="搜索">
+                      </div>
                   </div>
                   <div>
-                      
+
                   </div>
                </div>
            </div>
-	   </div>
+       </div>
+       <div class="right_main">
+          <div class="right_img d_f">
+            <ul class="d_f">
+                <li><a href="#"><img src="img/jiudian1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/jiudian2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/jiudian3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/jiudian4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/jiudian5.jpg" alt=""></a></li>
+            </ul>
+            <ul class="img_logo">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+          </div>
+       </div>
 	</div>
  </body>
 </html>

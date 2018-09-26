@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>登录首页</title>
 	<link rel="stylesheet" href="css/login.css">
+	<script src="js/vue.js"></script>
+	<script src="js/axios.min.js"></script>
+	
 </head>
 <body>
 	<div>
@@ -22,12 +25,13 @@
 		    <div id="saoma">
 		    <a href="#">扫码登录</a>
 		       </div>
-		     <form action="">
+		     <form id="form">
 			   <h2>携程账号登录 <a href="#" class="d3">手机号查单></a></h2>
-				<p><input type="text" placeholder="国内手机号/用户名/邮箱/卡号" class="input_d"></p>
-				<p id="q1"><input type="password" placeholder="登录密码" class="input_d"><a href="#">忘记密码?</a></p>
+				<p><input type="text" placeholder="国内手机号/用户名/邮箱/卡号" class="input_d" v-model="uname"></p>
+				<p id="q1"><input type="password" placeholder="登录密码" class="input_d" v-model="upwd"><a href="#">忘记密码?</a></p>
+				<p id="form_yanzheng" v-show="">用户名或密码不正确，请重新输入！</p>
 				<p><input type="checkbox">30天内自动登录 <a href="#" class="d3">手机动态密码</a></p>
-				<p><input type="submit" value="登录" class="d1"></p>
+				<p><input type="button" value="登录" class="d1" @click="submit"></p>
 				<p>登录即代表您同意我们的 <a href="">服务协议</a>和 <a href="#">隐私政策</a></p>
 			 </form>
 			  <ul>
@@ -46,5 +50,6 @@
 		  <p>Copyright © 1999-2018, ctrip.com. All rights reserved.</p>
 	   </div>
 	</div>
+	<script src="js/login.js"></script>
 </body>
 </html>
