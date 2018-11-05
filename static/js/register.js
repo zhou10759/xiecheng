@@ -61,11 +61,12 @@
                     uname:this.uname,
                     upwd:this.upwd,
                     email:this.email,
-                    phone:this.phone
+                    phone:this.phone,
                 }),
                 {headers: {'Content-Type': 'application/x-www-form-urlencoded'}}
                 
             )
+           
         
     }
     }

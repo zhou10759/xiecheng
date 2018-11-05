@@ -4,19 +4,18 @@
 data:{
    uname:"",
    upwd:"",
-   res:""
 },
 methods:{
   submit(){
-       this.res=axios.post(
+       axios.post(
           "http://localhost:4000/user/login",
           Qs.stringify({
               uname:this.uname,
               upwd:this.upwd
-           })
+           }).then
         
       )
-      console.log( this.res);
+     
   }},
   mounted(){
           
